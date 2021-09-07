@@ -17,7 +17,7 @@ Question 1: Do you own one's _Personal_ Data?
 `TODO`
 
 
-Question 2: Victims of Breach?.
+Question 2: Victims of Breach?
 
 `TODO`
 
