@@ -1,0 +1,25 @@
+---
+name: cmpsc-300-spring-2021-lab1
+break: true
+indent: 4
+---
+
+# --> check the technical writing
+writing/reflection.md:
+    ConfirmFileExists
+    CountFileWords --count 100
+    CountMarkdownTags --tag "heading" --count 6 --exact
+    MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+
+writing/twoArticles.md:
+    ConfirmFileExists
+    CountFileWords --count 100
+    CountMarkdownTags --tag "heading" --count 5 --exact
+    MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+
+
+
+# --> check the number of commits beyond a threshold
+CountCommits --count 3
