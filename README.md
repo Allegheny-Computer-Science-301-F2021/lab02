@@ -1,7 +1,7 @@
 
 ## cs301Fall2021-lab02
 
-## DUE by 3:00pm, September 25th
+## DUE by 3:00pm, September 21st
 
 ## Introduction
 
