@@ -52,6 +52,8 @@ In this class we will use GitHub for all course materials and most of the assign
  once you have installed [Docker Desktop](https://www.docker.com/products/docker-desktop),
  you can use the following `docker run` command to start `gradle grade` as a containerized application, using the [DockaGator](https://github.com/GatorEducator/dockagator) Docker image available on [DockerHub](https://cloud.docker.com/u/gatoreducator/repository/docker/gatoreducator/dockagator).
 
+
+
 ### Mac:
 
  ```bash
@@ -60,6 +62,9 @@ In this class we will use GitHub for all course materials and most of the assign
    -v "$HOME/.dockagator":/root/.local/share \
    gatoreducator/dockagator
  ```
+Note: you may need to remove the .dockagator directory before running the above. If there are problems, run `rm ~/.dockagator/` and try the command again.
+
+
 
 ### Linux:
 ```
@@ -68,6 +73,8 @@ sudo docker run --rm --name dockagator \
 	-v "$HOME/.dockagator":/root/.local/share \
 	gatoreducator/dockagator
 ```
+
+Note: you may need to remove the .dockagator directory before running the above. If there are problems, run `rm ~/.dockagator/` and try the command again.
 
  The command above will use `"$(pwd)"` (i.e., the current directory) as the project directory and `"$HOME/.dockagator"` as the cached GatorGrader directory. Please note that both of these directories must exist, although only the project directory must contain something. Generally, the project directory should contain the source code and technical writing of this assignment, as provided to a student through GitHub. Additionally, the cache directory should not contain anything other than directories and programs created by DockaGator, thus ensuring that they are not otherwise overwritten during the completion of the assignment. To ensure that the previous command will work correctly, you should create the cache directory by running the command `mkdir $HOME/.dockagator`.
 
